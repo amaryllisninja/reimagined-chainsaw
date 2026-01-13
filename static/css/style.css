@@ -1,3 +1,40 @@
+body{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
 .note-li {
-    color: red;
+    text-decoration: none;
+}
+
+ul.errorlist {
+    display: none;
+}
+
+div.alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.danger{
+    border: 2px red solid;
+    border-radius: 5px;
+    background-color: lightcoral;
+    padding: 50px
+}
+
+button.btn-normal {
+    border: 1px blue solid;
+    border-radius: 5px;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.form-control {
+    margin: 50px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
 }

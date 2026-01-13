@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="{% url 'notes.new' %}" method="post">{% csrf_token %}
+        {{ form }}
+        <button type="submit" class="btn-normal">SUBMIT</button>
+    </form>
+    {% if form.errors %}
+    <div class="alert danger">{{ form.errors.title.as_text }}</div>
+    {% endif %}
+
+{% endblock %}
