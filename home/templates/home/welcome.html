@@ -5,7 +5,9 @@
     <header><title>SmartNotes</title></header>
     <h1>Welcome to SmartNotes!</h1>
     <p>Today is {{today}}</p>
-    <a href="{% url 'notes.list' %}">See the Notes!</a>
+    <button class="btn-normal">
+        <a href="{% url 'notes.list' %}">See the Notes!</a>
+    </button>
 
     {% include "home/advantages.html" %}
 {% endblock %}

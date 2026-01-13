@@ -5,7 +5,18 @@
 
     <p>{{note.text}}</p>
 
-    {{note.likes}} &#10085;
+    {{note.likes}} &#10085; 
+    <button class="btn-normal">
+        <a href="{% url 'notes.add_like' pk=note.id %}"> Updoot</a>
+    </button>
 <br>
-    <a href="{% url 'notes.list' %}">Back to Notes List</a>
+<button class="btn-normal">
+    <a href="{% url 'notes.update' pk=note.id %}" class="btn">Edit This Note</a>
+</button>
+<button class="btn-normal">
+    <a href="{% url 'notes.list' %}" class="btn">Back to Notes List</a>
+</button>
+<button class="btn-danger">
+    <a href="{% url 'notes.delete' pk=note.id %}" class="btn">Delete This Note</a>
+</button>
 {% endblock %}

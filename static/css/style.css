@@ -25,10 +25,29 @@ div.danger{
 }
 
 button.btn-normal {
-    border: 1px blue solid;
+    border: 1px darkcyan solid;
     border-radius: 5px;
     background-color: aqua;
     padding: 10px;
+}
+
+button.btn-danger {
+    border: 1px red solid;
+    border-radius: 5px;
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+button.btn-confirm {
+    border: 1px green solid;
+    border-radius: 5px;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+a.btn {
+    text-decoration: none;
+    color: black;
 }
 
 .form-control {
