@@ -1,7 +1,11 @@
-<html>
+{% extends "base.html" %}
+
+{% block content %}
     <h1>{{note.title}}</h1>
 
     <p>{{note.text}}</p>
 
     {{note.likes}} &#10085;
-</html>
+<br>
+    <a href="{% url 'notes.list' %}">Back to Notes List</a>
+{% endblock %}

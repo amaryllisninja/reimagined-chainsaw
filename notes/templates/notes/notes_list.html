@@ -1,8 +1,15 @@
-<html>
-    <h1>Notes List</h1>
-    <ul>
-        {% for note in notes %}
-            <li>{{note.title}}</li>
-        {% endfor %}
-    </ul>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Notes List</h1>
+<ul>
+    {% for note in notes %}
+    <li class="note-li">
+        <a href="{% url 'notes.detail' pk=note.id %}">
+            {{note.title}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'home' %}">Go Home</a>
+{% endblock %}
